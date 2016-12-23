@@ -3,8 +3,8 @@
 
 Name:           rubygem-%{gem_name}
 Version:        1.0.0
-Release:        1%{?dist}
-Summary:        The Sensu Core built-in debug handler
+Release:        2%{?dist}
+Summary:        The Sensu Core built-in json mutator
 Group:          Development/Languages
 License:        MIT
 URL:            https://github.com/sensu-extensions/sensu-extensions-debug
@@ -28,7 +28,7 @@ Provides:       rubygem(%{gem_name}) = %{version}
 %endif
 
 %description
-The Sensu Core built-in debug handler.
+The Sensu Core built-in json mutator.
 
 
 %package doc
@@ -82,5 +82,8 @@ popd
 %doc %{gem_instdir}/README.md
 
 %changelog
+* Fri Dec 23 2016 Martin Mágr <mmagr@redhat.com> - 1.0.0-2
+- Fixed summary and description
+
 * Fri Dec 23 2016 Martin Mágr <mmagr@redhat.com> - 1.0.0-1
 - Initial package
